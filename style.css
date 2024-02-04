@@ -2,21 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
-    width: 100vw;
-    height: 100%;
     position: relative;
 }
 
 #upper{
-    width: 100vw;
-    height: 110vh;
+    max-width: 1440px;
+    height: 707px;
     /* border: 2px solid red; */
     background-image: url(./Rectangle\ 1.png);
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
 }
 
 #upper header{
@@ -66,16 +65,18 @@
 }
 
 #lower{
-    height: 50vh;
-    width: 100vw;
+    height: 317px;
+    width: 1440px;
     background-color: #002036;
 }
 
 #form{
     /* border: 2px solid red; */
+    /* display: flex; */
+    /* justify-content: center; */
     width: 95%;
-    /* margin: auto; */
-    height: 110vh;
+    /* margin: 0 auto; */
+    height: 722px;
     top: 151px;
     left: 30px;
     background: #FFFFFFD9;
@@ -110,7 +111,7 @@
     width: 80%;
     margin: auto;
     display: block;
-    height: 8vh;
+    height: 60px;
     font-size: 16px;
     border-radius: 8px;
     padding: 14px 17px 14px 17px;
@@ -136,7 +137,7 @@
     width: 45%;
     /* margin: auto; */
     /* display: block; */
-    height: 8vh;
+    height: 60px;
     font-size: 16px;
     border-radius: 8px;
     padding: 14px 17px 14px 17px;
@@ -192,7 +193,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 8vh;
+    height: 50px;
     /* font-size: 10px !important; */
     background: linear-gradient(0deg, #F6FFF5, #F6FFF5),
 linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
@@ -207,7 +208,7 @@ border: 1px solid #4242424D
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 8vh;
+    height: 50px;
     background: linear-gradient(0deg, #F6FFF5, #F6FFF5),
 linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
 }
@@ -225,6 +226,11 @@ linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
     /* margin: 0 10px; */
 }
 
+#checkouts label{
+    /* border: 2px solid red; */
+    width: 387px;
+    overflow: hidden;
+}
 
 
 #btn{
@@ -249,15 +255,17 @@ linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
 
 @media (min-width:680px) and (max-width:1080px) {
     #upper header{
-        display: block;
-        height: 110vh;
+    }
+    #lower{
+        width: 100vw;
     }
     #upper header h1{
         border: none;
         /* text-align: left !important; */
     }
     #form{
-        height: 110vh;
+        /* height: 110vh; */
+        left: 25px;
     }
     .or::after{
         right: 15%;
@@ -284,17 +292,23 @@ linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
     header h1{
         border: none;
     }
-    #upper{
-        height: 110vh;
-        background-position: left;
+    #upper header{
+        /* height: 110vh; */
+        /* background-position: left; */
         /* width: 150vw; */
         /* border: 2px solid red; */
+        flex-direction: column;
     }
 
-
+#lower{
+    width: 130vw;
+    height: 350px;
+}
     #form{
-        height: 110vh;
-        margin: auto;
+        /* height: 110vh; */
+        /* margin: auto; */
+        left: 60px;
+        height: 900px;
     }
     #form h1{
         font-size: 24px;
@@ -328,11 +342,11 @@ linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
         /* width: 100%; */
     }
     .or::after{
-        right: 1%;
+        right: 7%;
         width: 125px;
     }
     .or::before{
-        left: 1%;
+        left: 7%;
         width: 125px;
     }
     #socialmedia{
@@ -365,6 +379,7 @@ linear-gradient(0deg, rgba(66, 66, 66, 0.3), rgba(66, 66, 66, 0.3));
     #btn{
         width: 80%;
         text-align: center;
-        bottom: 8%;
+        bottom: 3%;
+        /* position: relative; */
     }
 }
